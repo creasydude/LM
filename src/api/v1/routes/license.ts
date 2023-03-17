@@ -11,6 +11,6 @@ const Router = express.Router();
 Router.post("/create/:type/:number", userAuth, createLicense);
 Router.post("/show/:type", userAuth, showLicense);
 Router.post("/activate", activateLicense);
-Router.get("/status", licenseStatus)
+Router.post("/status", licenseStatus)
 
 export default Router;
